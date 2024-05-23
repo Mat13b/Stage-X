@@ -22,7 +22,7 @@ function Displayfooter() {
                 <a href="">Les services proposés</a>
                 </section>
                 <h1>Nous Suivre sur nos resseaux</h1>
-                <div className="logo">
+                <div className="logo-rs">
                <img src={img} alt="" width="60"  height="60px"/>
                <img src={img3} alt="" width="60" height="60px"/>
                <img src={img2} alt="" width="60" height="60px"/>

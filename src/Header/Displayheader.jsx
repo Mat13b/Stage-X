@@ -1,5 +1,7 @@
 import React from "react";
-import img from "../assets/blue-light-wave-effect-transparent-background_52683-26879.png"
+import img from "../assets/en-chantant.png"
+import img1 from "../assets/bouton-de-compte-rond-avec-lutilisateur-a-linterieur.svg";
+import img2 from "../assets/paniers.svg";
 function Displayheader() {
     return (
         <header>
@@ -7,11 +9,16 @@ function Displayheader() {
          <div className="link">
             <section>
             <h1>Vinrix</h1>
-            <img src={img} alt="vague" width="80px"/> 
+            <img src={img} alt="micro" width="60px"/> 
             </section>
-                <a href="#">Accueil</a>
-                <a href="#">Nos produits</a>
-                <a href="#">Nos services</a>
+            <div className="nav">
+                <a href="Accueil">Accueil</a>
+                <a href="Nos produits">Nos produits</a>
+                <a href="Nos services">Nos services</a>
+                </div>
+                <img src={img1} alt="compte" width="30px"/>
+                <img src={img2} alt="panier" width="30px"/>
+                
             </div>
         </nav>
         </header>

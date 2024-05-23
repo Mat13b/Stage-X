@@ -3,12 +3,13 @@ body {
   padding: 0;
 }
 header {
-background-color: #C5F2FB;
-width: 100%;
-display: block;
+  background-color: #D5E3DA;
+  width: 100%;
+  /* Ajoutez cette ligne */
+
 }
 h1 {
-  background-image: linear-gradient(to right, #4141B8, #C00101);
+  background-image: linear-gradient(to right, #6868C0, #C00101, #FFF9E5);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -22,22 +23,24 @@ a ,h2 {
 }
 h3 {
   font-weight: lighter;
-
 }
 .link {
   display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.nav {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 footer {
  position: fixed;
  bottom: 0;
- background-color: #C5F2FB;
+ background-color: #D5E3DA;
  width: 100%;
-}
-.nav {
-  display: flex;
-  justify-content: space-evenly;
 }
 input {
  width: 175px;

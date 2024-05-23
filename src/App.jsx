@@ -5,7 +5,7 @@ import './App.css'
 import Displayheader from './Header/Displayheader';
 import Displayfooter from './Footer/Displayfooter';
 import Accueil from './Accceuil/Accueil';
-import Caroussel from "./Caroussel/Carrousel";
+import Carrousel from "./Caroussel/Carrousel";
 
 function App() {
 
@@ -13,10 +13,10 @@ function App() {
     <>
    <Displayheader/>
    <Accueil/>
-   <Caroussel/>
+   <Carrousel/>
    <Displayfooter/>
    </>
   );
 }
 
-export default App
+export default App;
