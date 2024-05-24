@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #FFF9E5;
 }
 header {
   background-color: #D5E3DA;
-  width: 100%;
-  /* Ajoutez cette ligne */
-
+  width: 100%
 }
 h1 {
   background-image: linear-gradient(to right, #6868C0, #C00101, #FFF9E5);
@@ -43,12 +42,18 @@ footer {
  width: 100%;
 }
 input {
- width: 175px;
+ width: 200px;
 }
 .use {
   color: #C00101;
   font-weight: bold;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
+.logo-rs {
+  gap: 10px;
+  display: flex;
+}
+

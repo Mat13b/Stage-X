@@ -18,7 +18,6 @@ function Displayheader() {
                 </div>
                 <img src={img1} alt="compte" width="30px"/>
                 <img src={img2} alt="panier" width="30px"/>
-                
             </div>
         </nav>
         </header>
