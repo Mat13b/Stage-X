@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import img from "../assets/twitter (1).png";
-import img1 from "../assets/facebook (1).png";
-import img2 from "../assets/instagram (1).png";
-import img3 from "../assets/github.png";
-import img4 from "../assets/en-chantant.png";
+import image1 from "../assets/twitter (1).png";
+import image2 from "../assets/facebook (1).png";
+import image3 from "../assets/instagram (1).png";
+import image4 from "../assets/github.png";
+import image5 from "../assets/en-chantant.png";
 function Displayfooter() {
   return (
     <footer>
@@ -18,7 +18,7 @@ function Displayfooter() {
                  color: "white"
                 }}
           >Envoyé
-          <img src={img4} alt="micro" width="30px" height="30px" />
+          <img src={image5} alt="micro" width="30px" height="30px" />
           </Button>
         </section>
         <section>
@@ -34,10 +34,10 @@ function Displayfooter() {
 
         <h1>Nous Suivre sur nos resseaux</h1>
         <div className="logo-rs">
-          <img src={img} alt="" width="50px" height="50px" />
-          <img src={img3} alt="" width="50px" height="50px" />
-          <img src={img2} alt="" width="50px" height="50px" />
-          <img src={img1} alt="" width="50" height="50px" /> 
+          <img src={image4} alt="" width="50px" height="50px" />
+          <img src={image3} alt="" width="50px" height="50px" />
+          <img src={image2} alt="" width="50px" height="50px" />
+          <img src={image1} alt="" width="50" height="50px" /> 
           </div>
         </div>
     </footer>

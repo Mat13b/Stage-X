@@ -13,7 +13,7 @@
   background-image: url(src/assets/guitareb.jpg);
   height:40vh;
   color: white;
-  margin-bottom: -15px;
+  margin-bottom: -20px;
   filter: brightness(70%);
   display: flex;
   Flex-direction: column;
@@ -21,4 +21,17 @@
   align-items: center;
   background-size: cover;
   background-position: center;
+  }
+ main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .Instruments { 
+    color: white;
+    text-decoration: none;
+    margin-top: 40%;
   }

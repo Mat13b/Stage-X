@@ -1,11 +1,10 @@
 import React from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Displayheader from './Header/Displayheader';
 import Displayfooter from './Footer/Displayfooter';
 import Accueil from './Accceuil/Accueil';
-import Carrousel from "./Caroussel/Carrousel";
+import NosServices from './NosServices/Services';
+import Allgame from './Allgame2/Allgame';
 import {Routes,Route} from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
@@ -13,12 +12,12 @@ function App() {
 
   return (
     <BrowserRouter>
+    <Displayheader/>
     <Routes>
-    <Route path="/" element={<Accueil/>}/>
+    <Route path="/Accueil" element={<Accueil/>}/>
+    <Route path="/Nosproduits/*" element={<Allgame/>}/>
+    <Route path="/NosServices" element={<NosServices />} />
     </Routes>
-   <Displayheader/>
-   <Accueil/>
-   <Carrousel/>
    <Displayfooter/>
    </BrowserRouter>
   );

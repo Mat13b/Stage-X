@@ -1,11 +1,11 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import img from '../assets/en-train-de-regarder.png';
+import image from '../assets/en-train-de-regarder.png';
 function Accueil() {
     return (
-        <div> 
+        <div>   
             <h2>les nouveautés du moment</h2> 
-             <div className='accueil'> 
+        <div className='accueil'> 
             <h3>De la nouveauté à la nostalgie du vintage , trouvez la musique qui vous fait vibrer<br />En explorant chaque mois des nouveauté instrumentale qui vous fera retourner dans les années 80 <br /></h3> 
         </div>
             <h3 className='use'> 
@@ -18,7 +18,7 @@ function Accueil() {
                  marginRight: "13%",
                 }}
           >Decouvrir
-                <img src={img} alt="micro" width="30px" height="30px"/>
+                <img src={image} alt="micro" width="50px" height="30px"/>
             </Button>
            <Button
             style={{
@@ -27,10 +27,10 @@ function Accueil() {
                 
                 }}
                   >En savoir plus
-                  <img src={img} alt="micro" width="30px" height="30px"/>
+                  <img src={image} alt="micro" width="50px" height="30px"/>
             </Button> 
             </div>
-    )
+    );
 }
 
 export default Accueil
