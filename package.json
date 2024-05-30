@@ -12,26 +12,29 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.18",
+    "@mui/material": "^5.15.19",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "axios": "^1.7.2",
     "better-react-carousel": "^1.1.2",
-    "npm": "^10.8.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "npm": "^10.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-material-ui-carousel": "^3.4.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.23.1",
     "styled-component": "^2.8.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.3.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.12"
   }
 }

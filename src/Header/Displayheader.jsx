@@ -7,10 +7,10 @@ function Displayheader() {
         <header>
             <nav>
          <div className="link">
-            <section>
-            <h1>Vinrix</h1>
-            <img src={img} alt="micro" width="60px"/> 
-            </section>
+            <section className="Playball">
+            <h1 style={{ margin: 0 }}>Vinrix</h1>
+            <img src={img} alt="micro" width="60px"/>  
+            </section>  
             <div className="nav">
                 <a href="Accueil">Accueil</a>
                 <a href="Nosproduits">Nos produits</a>
@@ -18,7 +18,7 @@ function Displayheader() {
                 </div>
                 <img src={img1} alt="compte" width="30px"/>
                 <img src={img2} alt="panier" width="30px"/>
-            </div>
+             </div>
         </nav>
         </header>
     );

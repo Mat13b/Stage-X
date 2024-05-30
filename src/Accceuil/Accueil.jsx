@@ -13,20 +13,21 @@ function Accueil() {
             <Button
             style={{
                 backgroundColor: "#6868C0",
-                 color: "white",
                  marginLeft: "32%",
                  marginRight: "13%",
+                 color: "white",
                 }}
-          >Decouvrir
+          >
+            <link rel="stylesheet" href="" />Decouvrir
                 <img src={image} alt="micro" width="50px" height="30px"/>
             </Button>
            <Button
             style={{
                 backgroundColor: "#6868C0",
                  color: "white",
-                
                 }}
-                  >En savoir plus
+                >
+                    en savoir plus
                   <img src={image} alt="micro" width="50px" height="30px"/>
             </Button> 
             </div>

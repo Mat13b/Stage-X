@@ -14,7 +14,7 @@
   height:40vh;
   color: white;
   margin-bottom: -20px;
-  filter: brightness(70%);
+  filter: brightness(80%);
   display: flex;
   Flex-direction: column;
   justify-content: center;
@@ -25,13 +25,15 @@
  main {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
+    border-radius: 30px;
   }
   .Instruments { 
     color: white;
+    font-size: 50px;
     text-decoration: none;
-    margin-top: 40%;
+    margin-top: 60%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

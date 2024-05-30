@@ -1,11 +1,39 @@
+@font-face {
+  font-family: 'Playball';
+  src: url('./Font/Playball-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Playball {
+  font-family: 'Playball';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./Font/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: semibold;
+  font-style: semibold;
+}
+
+.NotoSans {
+  font-family: 'NotoSans';
+  font-weight: semibold;
+  font-style: semibold;
+}
 body {
   margin: 0;
   padding: 0;
   background-color: #FFF9E5;
+  font-family: 'NotoSans';
+  font-size: small;
 }
 header {
   background-color: #D5E3DA;
-  width: 100%
+  width: 100%;
+  height: 100px;
 }
 h1 {
   background-image: linear-gradient(to right, #6868C0, #C00101, #FFF9E5);
@@ -42,6 +70,7 @@ footer {
  bottom: 0;
  background-color: #D5E3DA;
  width: 100%;
+ overflow: visible;
 }
 input {
  width: 200px;
@@ -49,6 +78,7 @@ input {
 .use {
   color: #C00101;
   font-weight: bold;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,5 +87,11 @@ input {
 .logo-rs {
   gap: 10px;
   display: flex;
+}
+.user {
+  color: #C00101;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 2;
 }
 
