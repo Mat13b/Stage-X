@@ -13,19 +13,26 @@ function Produit() {
     return (
         <div>
         <h2>Tout les Instruments</h2>
-        <main>
-        {produits.map(produits => {
+        <main style={{
+            display: 'flex', 
+        flexWrap: 'wrap', 
+        gap: '20px' 
+    }}
+    >
+        {produits.map(produit => {
             return (
-                <div key={produits.id}
+                <div key={produit.id}
                 style={{
                     backgroundColor: '#F0F0F0',
-                    gap: '20px',
-                    borderRadius: '20px'
+                    borderRadius: '25px',
+                    flex: '1',
+                    padding: '10px',
+                    margin: '10px',
                     }}
                     >
-                        <h3>{produits.caption}</h3>
-                        <img src={produits.url} alt="musique" width={200} height={150}/>
-                        <p>{produits.description}</p> 
+                        <h3>{produit.caption}</h3>
+                        <img src={produit.url} alt="musique" width={200} height={150}/>
+                        <p>{produit.description}</p> 
                         <img src={image} alt="musique" width={50} height={50}/>
                         <Button 
                         style={{
@@ -36,7 +43,7 @@ function Produit() {
                             alignItems: 'center',
                         }}
                          >
-                            {produits.prix}
+                            {produit.prix}
                         </Button>
                 </div>
                

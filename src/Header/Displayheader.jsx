@@ -2,6 +2,9 @@ import React from "react";
 import img from "../assets/en-chantant.png";
 import img1 from "../assets/bouton-de-compte-rond-avec-lutilisateur-a-linterieur.svg";
 import img2 from "../assets/paniers.svg";
+
+
+
 function Displayheader() {
     return (
         <header>

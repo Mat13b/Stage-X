@@ -9,7 +9,7 @@ function Allgame() {
   return (
     <div>
       <h2>Tout nos produits</h2>
-      <main>
+      <main className='maine'>
         <Paper style={{
            backgroundImage: `url(${image})`,
            width: '22%',
