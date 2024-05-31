@@ -12,15 +12,15 @@ function Displayheader() {
          <div className="link">
             <section className="Playball">
             <h1 style={{ margin: 0 }}>Vinrix</h1>
-            <img src={img} alt="micro" width="60px"/>  
+            <img src={img} alt="micro" width="50px"/>  
             </section>  
             <div className="nav">
                 <a href="Accueil">Accueil</a>
                 <a href="Nosproduits">Nos produits</a>
                 <a href="Nosservices">Nos services</a>
                 </div>
-                <img src={img1} alt="compte" width="30px"/>
-                <img src={img2} alt="panier" width="30px"/>
+                <img src={img1} alt="compte" width="40px"/>
+                <img src={img2} alt="panier" width="40px"/>
              </div>
         </nav>
         </header>

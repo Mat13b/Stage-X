@@ -28,7 +28,7 @@ body {
   padding: 0;
   background-color: #FFF9E5;
   font-family: 'NotoSans';
-  font-size: small;
+  font-size: medium;
 }
 header {
   background-color: #D5E3DA;
@@ -61,7 +61,7 @@ h3 {
 
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
