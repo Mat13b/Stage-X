@@ -4,41 +4,47 @@
         "caption": "Guitare",
         "url": "/src/assets/guitare1.jpg",
         "description": "Ceci est une guitare, un instrument de musique à cordes pincées, souvent utilisé dans divers genres musicaux tels que le rock, le jazz et le blues.",
-        "prix": "Acheter"
+        "action": "Acheter",
+        "prix": "145€"
     },
     {
         "id": 2,
         "caption": "Batterie",
-        "url": "/src/assets/Batterie.jpg",
+        "url": "/src/assets/batterie.jpg",
         "description": "La batterie est un ensemble de percussions, comprenant généralement des tambours et des cymbales, utilisé pour créer des rythmes dans de nombreux styles de musique.",
-        "prix": "Acheter"
+        "action": "Acheter",
+        "prix": "129€"
     },
     {
         "id": 3,
         "caption": "Trompette",
-        "url": "/src/assets/Trompette.jpg",
+        "url": "/src/assets/trompette.jpg",
         "description": "La trompette est un instrument de musique à vent de la famille des cuivres, connu pour son son clair et puissant, souvent utilisé dans le jazz et la musique classique.",
-        "prix": "Acheter"
+        "action": "Acheter",
+        "prix": "209€"
     },
     {
         "id": 4,
         "caption": "Violon",
-        "url": "/src/assets/Violon.jpg",
+        "url": "/src/assets/violon.jpg",
         "description": "Le violon est un instrument de musique à cordes frottées, connu pour sa sonorité riche et expressive, souvent utilisé dans la musique classique, le jazz et la musique folklorique.",
-        "prix": "Acheter"
+        "action": "Acheter",
+        "prix": "140€"
     },
     {
         "id": 5,
         "caption": "Tambour",
-        "url": "/src/assets/Tambour.jpg",
+        "url": "/src/assets/tambour.jpg",
         "description": "Le tambour est un instrument de percussion cylindrique, frappé avec des baguettes ou les mains, utilisé dans de nombreux genres musicaux pour marquer le rythme.",
-        "prix": "Acheter"
+        "action": "Acheter",
+        "prix": "229€"
     },
     {
         "id": 6,
         "caption": "Flûte",
         "url": "/src/assets/Flûte.jpg",
         "description": "La flûte est un instrument de musique à vent, fabriqué en métal ou en bois, produisant un son doux et mélodieux, souvent utilisé dans la musique classique et folklorique.",
-        "prix": "Acheter"
+        "action": "Acheter",
+        "prix": "200€"
     }
 ]

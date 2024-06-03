@@ -9,7 +9,7 @@
   font-family: 'Playball';
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 1vw; /* Utilisation des unités relatives pour le responsive */
 }
 @font-face {
   font-family: 'NotoSans';
@@ -25,73 +25,110 @@
 }
 body {
   margin: 0;
-  padding: 0;
   background-color: #FFF9E5;
   font-family: 'NotoSans';
-  font-size: medium;
 }
 header {
+  position: relative;
+  top: 0;
   background-color: #D5E3DA;
   width: 100%;
-  height: 100px;
 }
 h1 {
   background-image: linear-gradient(to right, #6868C0, #C00101, #FFF9E5);
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; 
 }
-a ,h2 {
+a, h2 {
   text-decoration: none;
   color: #4141B8;
   font-weight: bold; 
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: -2px;
 }
 h3 {
-  font-weight: lighter;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+h4 {
+  font-weight: bold;
+  color: black;
+  display: flex;
+}
 .link {
   display: flex;
   align-items: center;
-  width: auto;
 }
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 footer {
- position: fixed;
- bottom: 0;
- background-color: #D5E3DA;
- width: 100%;
- overflow: visible;
+  position: fixed;
+  bottom: 0;
+  background-color: #D5E3DA;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 input {
- width: 200px;
+  width: 10vw; /* Utilisation des unités relatives pour le responsive */
 }
 .use {
   color: #C00101;
-  font-weight: bold;
-  margin-top: 30px;
+  font-weight: bold; /* Utilisation des unités relatives pour le responsive */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; /* Utilisation des unités relatives pour le responsive */
 }
-.logo-rs {
-  gap: 10px;
+.logo-rs {/* Utilisation des unités relatives pour le responsive */
   display: flex;
+  flex-wrap: wrap;
 }
 .user {
   color: #C00101;
-  text-align: center;
-  margin-top: 20px;
-  line-height: 2;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .Playball {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 2vw;
+  }
+  h2 {
+    font-size: 2.5vw;
+  }
+  h3 {
+    font-size: 2vw;
+  }
+  input {
+    width: 20vw;
+  }
+  .use {
+    font-size: 4vw;
+  }
+  .user {
+    font-size: 1vw;
+  }
+  .maine {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 }
 

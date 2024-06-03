@@ -10,39 +10,33 @@ function Allgame() {
     <div>
       <h2>Tout nos produits</h2>
       <main className='maine'>
-        <Paper style={{
+        <div style={{
            backgroundImage: `url(${image})`,
-           width: '22%',
-           height: '20%',
            backgroundSize: 'cover',
            backgroundPosition: 'center',
-           margin: '3%',
-           }}
-           >
-          <Link to='/Instrument' className='Instruments'>Instrument</Link>
-        </Paper>
-        <Paper style={{ 
+           width: '20%',
+           margin: '5%',
+        }}>
+          <Link to='/Instrument' className='Instruments'>Instruments</Link>
+        </div>
+        <div style={{ 
           backgroundImage: `url(${image2})`,
-           width: '22%',
-           height: '20%',
-           backgroundSize: 'cover',
-           backgroundPosition: 'center',
-           margin: '3%',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '20%',
+          margin: '5%',
         }}>
           <Link to='/Vinyles' className='Instruments'>Vinyles</Link>
-        </Paper>
-        <Paper style={{
+        </div>
+        <div style={{
            backgroundImage: `url(${image3})`,
-           width: '22%',
-           height: '20%',
            backgroundSize: 'cover',
            backgroundPosition: 'center',
-           margin: '3%',
+           width: '20%',
+           margin: '5%',
         }}>
-          <div>
-            <Link to='/CD' className='Instruments'>CD</Link>
-          </div>
-        </Paper>
+          <Link to='/CD' className='Instruments'>CD</Link>
+        </div>
       </main>
       <Routes>
         <Route path='/Instrument' element={<Produit />} />

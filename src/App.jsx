@@ -14,6 +14,7 @@ function App() {
   return (
     <BrowserRouter>
     <Displayheader/>
+  
     <Routes>
     <Route path="/Accueil" element={<Accueil/>}/>
     <Route path="/Nosproduits/*" element={<Allgame/>}/>

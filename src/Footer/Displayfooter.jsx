@@ -8,8 +8,9 @@ import image5 from "../assets/en-chantant.png";
 
 function Displayfooter() {
 
-  const [validEmail, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [emailSuccess, setEmailSuccess] = useState('');
 
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -20,9 +21,11 @@ function Displayfooter() {
     const email = e.target.value;
     setEmail(email);
     if (!validateEmail(email)) {
-      setEmailError("Adresse email invalide");
+      setEmailError("Adresse email invalide ! Veuillez réessayer");
+      setEmailSuccess('');
     } else {
       setEmailError('');
+      setEmailSuccess('Votre adresse email est valide');
     }
   };
 
@@ -30,24 +33,25 @@ function Displayfooter() {
     <footer>
       <div className="nav">
         <section>
-          <h1 style={{ margin: 0 }}>Nos actualité</h1>
+          <h1 style={{ margin: 0 }}>Nos actualités</h1>
           <input
            type="text"
-            placeholder="Entrez Votre adresse mail" 
+            placeholder="Entrez votre adresse mail" 
             style={{
-              border: emailError ? '2px solid red' : '2px solid black',
+              border: emailError ? '2px solid red' : emailSuccess ? '2px solid green' : '2px solid black'
             }}
-            value={validEmail}
+            value={email}
             onChange={handleEmailChange}
             />
-          {emailError && <p style={{color: 'red'}}>{emailError}</p>}
+          {emailError ? <p style={{color: 'red', fontWeight: 'bold'}}>{emailError}</p> : null}
+          {emailSuccess ? <p style={{color: 'green', fontWeight: 'bold'}}>{emailSuccess}</p> : null}
           <Button 
             style={{
                 backgroundColor: "#6868C0",
                  color: "white",
                  
                 }}
-          >Envoyé
+          >Envoyer
           <img src={image5} alt="micro" width="30px" height="30px" />
           </Button>
         </section>
@@ -61,12 +65,12 @@ function Displayfooter() {
           </ul>
           </div>
         </section>
-        <h1>Nous Suivre sur nos resseaux</h1>
+        <h1>Nous Suivre sur nos réseaux</h1>
         <div className="logo-rs">
-          <img src={image4} alt="" width="50px" height="50px" />
-          <img src={image3} alt="" width="50px" height="50px" />
-          <img src={image2} alt="" width="50px" height="50px" />
-          <img src={image1} alt="" width="50" height="50px" /> 
+        <a href="https://github.com/Mat13b"><img src={image4} alt="" width="50px" height="50px" /></a>
+          <a href="https://www.facebook.com/ac.at.7"><img src={image3} alt="" width="50px" height="50px" /></a>
+          <a href="https://www.instagram.com/mathieume740/"><img src={image2} alt="" width="50px" height="50px" /></a>
+          <a href="https://x.com/Mathieuschmit16"><img src={image1} alt="" width="50" height="50px" /></a>
           </div>
         </div>
     </footer>
