@@ -3,13 +3,13 @@
   src: url('./Font/Playball-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+}             
 
 .Playball {
   font-family: 'Playball';
   font-weight: 400;
   font-style: normal;
-  font-size: 1vw; /* Utilisation des unités relatives pour le responsive */
+  font-size: 2vw; /* Utilisation des unités relatives pour le responsive */
 }
 @font-face {
   font-family: 'NotoSans';
@@ -39,6 +39,10 @@ h1 {
   -webkit-background-clip: text;
   color: transparent; 
 }
+.panier {
+  border: none;
+  background-color: transparent;
+}
 a, h2 {
   text-decoration: none;
   color: #4141B8;
@@ -46,6 +50,7 @@ a, h2 {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: medium;
 }
 h3 {
   font-weight: bold;
@@ -80,6 +85,13 @@ footer {
   left: 0;
   right: 0;
 }
+.nav_1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
 input {
   width: 10vw; /* Utilisation des unités relatives pour le responsive */
 }
@@ -103,10 +115,24 @@ input {
 
 @media screen and (max-width: 768px) {
   .Playball {
-    font-size: 2vw;
+    font-size: 15vw;
+  }
+  header {
+    height: 10vh;
+    margin: 0;
+  }
+  header img {
+    margin-bottom: 5vh;
+  }
+  .nav {
+    margin-bottom: 6vh;
+  }
+  .panier {
+  border: none;
+  background-color: transparent;
   }
   h1 {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   h2 {
     font-size: 2.5vw;
@@ -118,7 +144,7 @@ input {
     width: 20vw;
   }
   .use {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .user {
     font-size: 1vw;
@@ -129,6 +155,10 @@ input {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
+  }
+  .Instruments {
+    font-size: 20px;
+  }
 }
 
+ 

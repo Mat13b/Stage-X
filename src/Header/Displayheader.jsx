@@ -27,7 +27,7 @@ function Displayheader() {
                         <a href="Nosservices">Nos services</a>
                     </div>
                    <img src={img1} alt="compte" width="40px"/>
-                    <button 
+                    <button className="panier"
                     onClick={handleOpen}>
                         <img src={img2} alt="panier" width="40px"/>
                     </button>

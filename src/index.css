@@ -8,16 +8,37 @@
     display: flex;
     flex-direction: column;
 }
+.container-fond {
+    background-image: url(src/assets/dolo-iglesias-z9z6u1rn7sY-unsplash.jpg); 
+    filter: brightness(65%);
+    background-size: 100% ; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container-fond::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajout d'une couche sombre pour améliorer la visibilité du texte */
+}
+
 .accueil {
-    background-image: url(src/assets/dolo-iglesias-z9z6u1rn7sY-unsplash.jpg);
     height: 50vh;
-    filter: brightness(100%);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    background-size: 100% ; 
+    background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    z-index: 1; /* Assure que le texte reste visible au-dessus du ::before */
 }
 .maine {
     display: flex;
@@ -34,4 +55,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+.btn {
+    display: flex;
+    gap: 5%;
+    margin-top: 2%;
+    padding: 2%;
+    margin-bottom: 3%;
 }

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
+import Dialog from '@mui/material/Dialog';
+import Box from '@mui/material/Box';
 import image1 from "../assets/twitter (1).png";
 import image2 from "../assets/facebook (1).png";
 import image3 from "../assets/instagram (1).png";
@@ -11,6 +13,7 @@ function Displayfooter() {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [emailSuccess, setEmailSuccess] = useState('');
+  const [openModal, setOpenModal] = useState(false);
 
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -29,9 +32,19 @@ function Displayfooter() {
     }
   };
 
+  const handleSendClick = () => {
+    if (validateEmail(email)) {
+      setOpenModal(true);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <footer>
-      <div className="nav">
+      <div className="nav_1">
         <section>
           <h1 style={{ margin: 0 }}>Nos actualités</h1>
           <input
@@ -49,11 +62,21 @@ function Displayfooter() {
             style={{
                 backgroundColor: "#6868C0",
                  color: "white",
-                 
+                 borderRadius: 20
                 }}
+            onClick={handleSendClick}
           >Envoyer
           <img src={image5} alt="micro" width="30px" height="30px" />
           </Button>
+          <Dialog
+            open={openModal}
+            onClose={handleCloseModal}
+            aria-labelledby="modal-title"
+          >
+            <Box sx={{ p: 4, backgroundColor: 'white', borderRadius: 1 }}>
+              <p>Votre adresse email a été validée avec succès!</p>
+            </Box>
+          </Dialog>
         </section>
         <section>
           <h1>Navigation</h1>

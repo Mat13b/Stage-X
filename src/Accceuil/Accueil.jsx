@@ -6,8 +6,10 @@ function Accueil() {
     return (
         <div>   
             <h2>les nouveautés du moment</h2> 
+            <div className='container-fond'>  
         <div className='accueil'> 
             <h3>De la nouveauté à la nostalgie du vintage, trouvez la musique qui vous fait vibrer <br />En explorant chaque mois des nouveautés instrumentales qui vous fera retourner dans les années 80.</h3> 
+             </div> 
              </div>
             <h3 className='use'> 
             explorez notre catalogue pour une expérience musicale immersive</h3>
@@ -38,6 +40,7 @@ function Accueil() {
             </Button> 
             </div>
         </div>
+      
     );
 }
 
